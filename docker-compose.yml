@@ -1,0 +1,43 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: cont1-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "11223344"
+      MYSQL_DATABASE: patrones
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init/mysql:/docker-entrypoint-initdb.d
+    networks:
+      - red
+
+  postgres:
+    image: postgres:16
+    container_name: cont2-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "11223344"
+      POSTGRES_DB: patrones
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init/postgres:/docker-entrypoint-initdb.d
+    networks:
+      - red
+
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: cont3-cloudbeaver
+    ports:
+      - "8978:8978"
+    depends_on:
+      - mysql
+      - postgres
+    networks:
+    red:
+      name: red-taller
+      driver: bridge
+networks:
+  red:
+    driver: bridge

@@ -1,0 +1,10 @@
+patronfactorymethod\FactoryBaseDatos$1.class
+patronfactorymethod\PatronFactoryMethod.class
+patronfactorymethod\TiposBD.class
+dao\DAOarticulos.class
+utilidades\UtilidadesAcceso.class
+entidades\articulos.class
+patronfactorymethod\FactoryBaseDatos.class
+patronfactorymethod\IntAdaptador.class
+implementacion\AdaptadorPostgresql.class
+implementacion\AdaptadorMysql.class

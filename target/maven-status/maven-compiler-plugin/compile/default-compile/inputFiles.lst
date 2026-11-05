@@ -1,0 +1,9 @@
+D:\ARQUI\Talleres\4\src\main\java\dao\DAOarticulos.java
+D:\ARQUI\Talleres\4\src\main\java\entidades\articulos.java
+D:\ARQUI\Talleres\4\src\main\java\implementacion\AdaptadorMysql.java
+D:\ARQUI\Talleres\4\src\main\java\implementacion\AdaptadorPostgresql.java
+D:\ARQUI\Talleres\4\src\main\java\patronfactorymethod\FactoryBaseDatos.java
+D:\ARQUI\Talleres\4\src\main\java\patronfactorymethod\IntAdaptador.java
+D:\ARQUI\Talleres\4\src\main\java\patronfactorymethod\PatronFactoryMethod.java
+D:\ARQUI\Talleres\4\src\main\java\patronfactorymethod\TiposBD.java
+D:\ARQUI\Talleres\4\src\main\java\utilidades\UtilidadesAcceso.java
